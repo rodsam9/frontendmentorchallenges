@@ -147,6 +147,16 @@ html {
 .attribution {
     display: none;
 }
+.go-back {
+    display: block;
+    position: absolute;
+    top: 0;
+}
+.go-back a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--white);
+}
 
 
 @media screen and (min-width: 601px) {
@@ -243,5 +253,8 @@ html {
     }
     .attribution a:hover {
         color: gray;
+    }
+    .go-back {
+        display: none;
     }
 }

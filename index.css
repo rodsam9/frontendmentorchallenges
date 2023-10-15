@@ -1,0 +1,22 @@
+body {
+     text-align: center;
+}
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.title {
+    font-size: 4rem;
+}
+
+@media screen and (min-width: 610px) {
+    .layout {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .layout {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
