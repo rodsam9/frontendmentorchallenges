@@ -150,23 +150,47 @@ html {
     .main {
         display: flex;
         flex-direction: row;
-        width: 1200px;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height: 450px;
+        border-radius: 30px;
+        background-color: var(--white);
+        box-shadow: 10px 10px 50px rgb(225, 225, 225);
     }
     .result {
         position: static;
-        width: 300px;
-        height: 400px;
-        display: block;
+        max-width: 300px;
+        border-radius: 30px;
     }
+    .your-result{
+        margin-top: 35px;
+        font-size: 1.2rem;
+    }
+    .circle {
+        margin-top: 20px;
+        height: 175px;
+        width: 175px;
+    }
+    .circle h1 {
+        font-size: 3.75rem;
+        margin-top: 20px;
+    }
+    .result h2 {
+        margin-bottom: 10px;
+    }
+    .description {
+        margin-top: 5px;
+    }
+
     .summary {
         position: static;
+        margin-left: 15px;
         width: 300px;
-        height: 400px;
-        margin: 0 auto;
     }
 
     .col {
-        width: 600px;
+        position: static;
     }
     .row{
         display: flex;
@@ -197,10 +221,14 @@ html {
     .btn {
         justify-content: center;
         width: 250px;
+        margin-top: 15px;
     }
 
     .btn:hover {
         cursor: pointer;
         background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue)); 
+    }
+    .attribution {
+        text-align: center;
     }
 }
