@@ -246,6 +246,7 @@ html {
     .attribution {
         display: block;
         text-align: center;
+        margin-top: 20px;
     }
     .attribution a {
         text-decoration: none;

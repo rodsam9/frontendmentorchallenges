@@ -9,13 +9,14 @@ body {
     font-size: 4rem;
 }
 
-@media screen and (min-width: 610px) {
+
+@media screen and (min-width: 715px) {
     .layout {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1075px) {
     .layout {
         grid-template-columns: 1fr 1fr 1fr;
     }
