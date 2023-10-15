@@ -1,0 +1,206 @@
+:root {
+    --lightred: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+
+html {
+    font-family: 'Hanken Grotesk';
+}
+
+.result {
+    position: absolute;
+    left:0;
+    top:0;
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.your-result{
+    color: var(--light-lavender);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.circle {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    background-image: linear-gradient(var(--violet-blue), var(--persian-blue))
+}
+.circle h1 {
+    color: var(--white);
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.circle p {
+    color: var(--light-lavender);
+   
+    margin: 5px 0;
+}
+.result h2{
+    color: var(--white);
+    font-weight: 700;
+}
+.description {
+    width: 70%;
+    margin: -10px auto 40px auto;
+    color: var(--light-lavender);
+    font-weight: 500;
+}
+.summary {
+    position: absolute;
+    top: 23em;
+    width: 90%;
+    margin-left: 5px;
+}
+.summary-title{
+    color: var(--dark-gray-blue);
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 15px;
+    width: 90%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 0 10px;
+}
+.characteristic {
+    margin-left: -100px;
+}
+
+.reaction {
+    background-color: hsl(0, 100%, 98%);
+    border-radius: 10px;
+    width: 90%;
+}
+.reaction .characteristic{
+    color: var(--lightred);
+}
+.memory {
+    background-color: hsl(39, 100%, 98%);
+    border-radius: 10px;
+    width: 90%;
+}
+.memory .characteristic{
+    color: var(--orangey-yellow);
+}
+.verbal {
+    background-color: hsl(166, 100%, 98%);
+    border-radius: 10px;
+    width: 90%;
+}
+.verbal .characteristic{
+    color: var(--green-teal);
+}
+.visual {
+    background-color: hsl(234, 85%, 98%);
+    border-radius: 10px;
+    width: 90%;
+}
+.visual .characteristic{
+    color: var(--cobalt-blue);
+}
+.number{
+    font-weight: 700;
+}
+.number span{
+    color: var(--light-lavender);
+}
+.btn {
+    height: 3.25rem;
+    width: 90%;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: var(--dark-gray-blue);
+    border-radius: 30px;
+    border-style: none;
+    margin-top: 20px;
+}
+
+
+@media screen and (min-width: 601px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+        width: 1200px;
+    }
+    .result {
+        position: static;
+        width: 300px;
+        height: 400px;
+        display: block;
+    }
+    .summary {
+        position: static;
+        width: 300px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .col {
+        width: 600px;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+
+    }
+    .reaction {
+
+        width: 250px;
+    }
+
+    .memory {
+
+        width: 250px;
+    }
+
+    .verbal {
+
+        width: 250px;
+    }
+
+    .visual {
+
+        width: 250px;
+    }
+    
+    .btn {
+        justify-content: center;
+        width: 250px;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+        background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue)); 
+    }
+}
