@@ -144,16 +144,21 @@ html {
     border-style: none;
     margin-top: 20px;
 }
+.attribution {
+    display: none;
+}
 
 
 @media screen and (min-width: 601px) {
+
     .main {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        margin: 0 auto;
+        margin-top: 12em;
         width: 600px;
-        height: 450px;
         border-radius: 30px;
         background-color: var(--white);
         box-shadow: 10px 10px 50px rgb(225, 225, 225);
@@ -229,6 +234,14 @@ html {
         background-image: linear-gradient(var(--light-slate-blue), var(--light-royal-blue)); 
     }
     .attribution {
+        display: block;
         text-align: center;
+    }
+    .attribution a {
+        text-decoration: none;
+        color: black;
+    }
+    .attribution a:hover {
+        color: gray;
     }
 }
