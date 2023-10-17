@@ -1,5 +1,6 @@
 body {
      text-align: center;
+     background-color: rgb(224, 187, 187);
 }
 .layout {
     display: grid;
@@ -7,9 +8,21 @@ body {
 }
 .title {
     font-size: 4rem;
+    color: black;
 }
-
-
+.box h2 {
+    margin-top: -2px;
+    margin-bottom: 5px;
+}
+.box {
+    margin-bottom: 35px;
+}
+a {
+    color: black;
+}
+a:hover {
+    color: white;
+}
 @media screen and (min-width: 715px) {
     .layout {
         grid-template-columns: 1fr 1fr;
